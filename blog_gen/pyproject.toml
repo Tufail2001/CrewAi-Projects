@@ -1,0 +1,19 @@
+[project]
+name = "blog"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hira urooj", email = "Charleswalles2006@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.100.1",
+]
+
+[project.scripts]
+first_blog = "blog.blogflow:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
