@@ -1,0 +1,21 @@
+[project]
+name = "blog-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hira urooj", email = "Charleswalles2006@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+blog-1 = "blog_1:main"
+piaic = "blog_1.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
